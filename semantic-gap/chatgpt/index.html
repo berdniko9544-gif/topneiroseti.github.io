@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Semantic Gap Analysis - ChatGPT - STIVA.ai</title>
+<meta name="description" content="Анализ семантического покрытия по теме ChatGPT: 1383 интентов, покрытие stiva.ai 75.9%, разрывы 333.">
+<meta name="keywords" content="semantic gap, ChatGPT, SEO, stiva.ai, покрытие интентов, семантическое ядро">
+<meta property="og:title" content="Semantic Gap Analysis - ChatGPT">
+<meta property="og:description" content="Анализ семантического покрытия: 1383 интентов, 75.9% покрыто, 333 разрывов.">
+<link rel="canonical" href="https://topneiroseti.github.io/semantic-gap/chatgpt/">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<style>
+.sg-header { background: linear-gradient(135deg, #6d28d9, #9333ea); color: white; padding: 32px 24px; border-radius: 12px; margin-bottom: 24px; }
+.sg-header h1 { margin: 0 0 8px; font-size: 28px; }
+.sg-header p { margin: 0; opacity: 0.9; font-size: 15px; }
+.sg-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 24px; }
+.sg-stat { background: #1e1b2e; border: 1px solid #2d2a3f; border-radius: 10px; padding: 20px; text-align: center; }
+.sg-stat .num { font-size: 32px; font-weight: 700; color: #9333ea; }
+.sg-stat .label { font-size: 13px; color: #888; margin-top: 4px; }
+.sg-stat.gap .num { color: #ef4444; }
+.sg-stat.cover .num { color: #22c55e; }
+.sg-bar { background: #1e1b2e; border-radius: 10px; padding: 20px; margin-bottom: 24px; }
+.sg-bar-track { background: #2d2a3f; border-radius: 8px; height: 24px; overflow: hidden; }
+.sg-bar-fill { background: linear-gradient(90deg, #22c55e, #9333ea); height: 100%; border-radius: 8px; display: flex; align-items: center; justify-content: flex-end; padding-right: 12px; color: white; font-size: 13px; font-weight: 600; }
+.sg-cats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 24px; }
+.sg-cat { background: #1e1b2e; border: 1px solid #2d2a3f; border-radius: 8px; padding: 12px 16px; }
+.sg-cat .cat-name { font-size: 14px; font-weight: 600; color: #c4b5fd; }
+.sg-cat .cat-count { font-size: 24px; font-weight: 700; color: #ef4444; }
+.sg-table { width: 100%; border-collapse: collapse; background: #1e1b2e; border-radius: 10px; overflow: hidden; }
+.sg-table th { background: #2d2a3f; padding: 12px 16px; text-align: left; font-size: 13px; color: #c4b5fd; text-transform: uppercase; letter-spacing: 0.5px; }
+.sg-table td { padding: 10px 16px; border-top: 1px solid #2d2a3f; font-size: 14px; }
+.sg-table tr:hover { background: #26233a; }
+.sg-badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+.sg-badge.gap { background: rgba(239,68,68,0.15); color: #ef4444; }
+.sg-badge.cover { background: rgba(34,197,94,0.15); color: #22c55e; }
+.sg-filter { margin-bottom: 16px; display: flex; gap: 8px; flex-wrap: wrap; }
+.sg-filter button { background: #2d2a3f; border: 1px solid #3d3a52; color: #ccc; padding: 6px 14px; border-radius: 8px; cursor: pointer; font-size: 13px; }
+.sg-filter button.active { background: #6d28d9; color: white; border-color: #6d28d9; }
+.sg-info { background: #1e1b2e; border: 1px solid #2d2a3f; border-radius: 10px; padding: 20px; margin-bottom: 24px; font-size: 14px; line-height: 1.6; }
+.sg-info a { color: #9333ea; }
+</style>
+</head>
+<body>
+<header class="header"></header>
+
+<div class="page">
+<nav class="breadcrumbs" aria-label="Хлебные крошки">
+<a href="../../">Главная</a> <span class="bc-sep">></span>
+<a href="../../semantic-gap/">Semantic Gap</a> <span class="bc-sep">></span>
+<span>ChatGPT</span>
+</nav>
+
+<div class="sg-header">
+<h1>Semantic Gap Analysis: ChatGPT</h1>
+<p>Анализ семантического покрытия stiva.ai по теме ChatGPT</p>
+</div>
+
+<div class="sg-stats">
+<div class="sg-stat"><div class="num">1383</div><div class="label">Всего интентов</div></div>
+<div class="sg-stat cover"><div class="num">1050</div><div class="label">Покрыто stiva.ai</div></div>
+<div class="sg-stat gap"><div class="num">333</div><div class="label">Разрывы (gap)</div></div>
+<div class="sg-stat"><div class="num">75.9%</div><div class="label">Покрытие</div></div>
+</div>
+
+<div class="sg-bar">
+<div style="margin-bottom:8px;font-size:14px;color:#888;">Покрытие семантического ядра</div>
+<div class="sg-bar-track">
+<div class="sg-bar-fill" style="width:75.9%">75.9%</div>
+</div>
+</div>
+
+<div class="sg-info">
+<p><strong>Что это.</strong> Semantic Gap Analysis - анализ семантического покрытия сайта. Собрано 1383 поисковых интентов из Google Suggest и Yandex Suggest по теме «ChatGPT». Каждый интент проверен: закрывает ли <a href="https://stiva.ai/models/chatgpt" target="_blank">stiva.ai/models/chatgpt</a> этот запрос. Разрывы (gap) - интенты, которые закрывают конкуренты, но не stiva.ai.</p>
+<p><strong>Источник интентов:</strong> Google Suggest (google.com/complete/search) + Yandex Suggest (suggest.yandex.ru). 1383 уникальных запросов, сгруппированных по 11 категориям.</p>
+<p><strong>Метод:</strong> Каждый интент проверяется на наличие релевантного контента на stiva.ai. Если на сайте есть страница, отвечающая на запрос - интент «покрыт». Если нет - «разрыв».</p>
+</div>
+
+<div class="sg-cats">
+<div class="sg-cat">
+<div class="cat-name">прочие</div>
+<div class="cat-count">223</div>
+</div>
+<div class="sg-cat">
+<div class="cat-name">цена/тарифы</div>
+<div class="cat-count">23</div>
+</div>
+<div class="sg-cat">
+<div class="cat-name">промпты</div>
+<div class="cat-count">22</div>
+</div>
+<div class="sg-cat">
+<div class="cat-name">регистрация/вход</div>
+<div class="cat-count">21</div>
+</div>
+<div class="sg-cat">
+<div class="cat-name">скачать</div>
+<div class="cat-count">18</div>
+</div>
+<div class="sg-cat">
+<div class="cat-name">настройки</div>
+<div class="cat-count">10</div>
+</div>
+<div class="sg-cat">
+<div class="cat-name">написать</div>
+<div class="cat-count">7</div>
+</div>
+<div class="sg-cat">
+<div class="cat-name">для учёбы</div>
+<div class="cat-count">3</div>
+</div>
+<div class="sg-cat">
+<div class="cat-name">россия/русский</div>
+<div class="cat-count">2</div>
+</div>
+<div class="sg-cat">
+<div class="cat-name">маркетинг</div>
+<div class="cat-count">2</div>
+</div>
+<div class="sg-cat">
+<div class="cat-name">онлайн</div>
+<div class="cat-count">2</div>
+</div>
+</div>
+
+<div class="sg-filter">
+<button class="active" onclick="filterTable('all')">Все</button>
+<button onclick="filterTable('gap')">Только разрывы</button>
+<button onclick="filterTable('covered')">Только покрытые</button>
+</div>
+
+<table class="sg-table" id="gapTable">
+<thead>
+<tr>
+<th>#</th>
+<th>Интент</th>
+<th>Категория</th>
+<th>stiva.ai</th>
+<th>Приоритет</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-gap">
+<td>1</td>
+<td>chat gpt enterprise login</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>2</td>
+<td>chat gpt регистрация</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>3</td>
+<td>chatgpt bg без регистрация</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>4</td>
+<td>chatgpt business login</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>5</td>
+<td>chatgpt enterprise login</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>6</td>
+<td>chatgpt team login</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>7</td>
+<td>chatgpt без входа</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>8</td>
+<td>chatgpt вход</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>9</td>
+<td>chatgpt вход в аккаунт</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>10</td>
+<td>chatgpt вход в личный кабинет</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>11</td>
+<td>chatgpt вход по паролю</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>12</td>
+<td>chatgpt вход по почте</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>13</td>
+<td>chatgpt вход через microsoft</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>14</td>
+<td>chatgpt вход через гугл</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>15</td>
+<td>chatgpt не входит в аккаунт</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>16</td>
+<td>chatgpt регистрация</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>17</td>
+<td>chatgpt регистрация без номера телефона</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>18</td>
+<td>chatgpt регистрация из россии</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>19</td>
+<td>chatgpt регистрация по номеру телефона</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>20</td>
+<td>openai chatgpt регистрация</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>21</td>
+<td>регистрация chatgpt 2025</td>
+<td>регистрация/вход</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>22</td>
+<td>chat gpt chat app</td>
+<td>скачать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>23</td>
+<td>chatgpt 4pda</td>
+<td>скачать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>24</td>
+<td>chatgpt 4pda apk</td>
+<td>скачать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>25</td>
+<td>chatgpt apk</td>
+<td>скачать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>26</td>
+<td>chatgpt app</td>
+<td>скачать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>27</td>
+<td>chatgpt app bot</td>
+<td>скачать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>28</td>
+<td>chatgpt download</td>
+<td>скачать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>29</td>
+<td>chatgpt manual download</td>
+<td>скачать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>30</td>
+<td>chatgpt manual pdf free download</td>
+<td>скачать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>31</td>
+<td>chatgpt приложение</td>
+<td>скачать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>32</td>
+<td>chatgpt приложение 4pda</td>
+<td>скачать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>33</td>
+<td>chatgpt приложение apk</td>
+<td>скачать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>34</td>
+<td>chatgpt приложение ios</td>
+<td>скачать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>35</td>
+<td>chatgpt приложение mac</td>
+<td>скачать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>36</td>
+<td>chatgpt приложение windows</td>
+<td>скачать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>37</td>
+<td>chatgpt приложение андроид</td>
+<td>скачать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>38</td>
+<td>chatgpt приложение на пк</td>
+<td>скачать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>39</td>
+<td>chatgpt 5.6 plus</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>40</td>
+<td>chatgpt gpt 6 pro</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>41</td>
+<td>chatgpt plus</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>42</td>
+<td>chatgpt plus for students</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>43</td>
+<td>chatgpt plus free</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>44</td>
+<td>chatgpt plus free trial</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>45</td>
+<td>chatgpt plus gpt 6</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>46</td>
+<td>chatgpt plus gpt 6 astra</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>47</td>
+<td>chatgpt plus login</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>48</td>
+<td>chatgpt plus price</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>49</td>
+<td>chatgpt plus все возможности</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>50</td>
+<td>chatgpt plus вход</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>51</td>
+<td>chatgpt plus лимиты</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>52</td>
+<td>chatgpt plus что дает</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>53</td>
+<td>chatgpt plus что может</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>54</td>
+<td>chatgpt pro</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>55</td>
+<td>chatgpt pro free</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>56</td>
+<td>chatgpt pro price</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>57</td>
+<td>chatgpt pro x20</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>58</td>
+<td>chatgpt pro x5</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>59</td>
+<td>возможности chatgpt plus</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>60</td>
+<td>возможности chatgpt pro</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>61</td>
+<td>функции chatgpt plus</td>
+<td>цена/тарифы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>62</td>
+<td>chat gpt custom instructions 2026</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>63</td>
+<td>chat gpt custom instructions best</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>64</td>
+<td>chat gpt custom instructions for developers</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>65</td>
+<td>chat gpt custom instructions for students</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>66</td>
+<td>chat gpt custom instructions limit</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>67</td>
+<td>chat gpt custom instructions reddit</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>68</td>
+<td>chat gpt custom instructions template</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>69</td>
+<td>chat gpt custom instructions word limit</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>70</td>
+<td>chat gpt templates</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>71</td>
+<td>chatgpt custom instructions</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>72</td>
+<td>chatgpt custom instructions 2026</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>73</td>
+<td>chatgpt custom instructions examples</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>74</td>
+<td>chatgpt custom instructions examples reddit</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>75</td>
+<td>chatgpt custom instructions for coding</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>76</td>
+<td>chatgpt custom instructions generator</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>77</td>
+<td>chatgpt custom instructions github</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>78</td>
+<td>chatgpt custom instructions not saving</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>79</td>
+<td>chatgpt custom instructions personality</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>80</td>
+<td>chatgpt templates</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>81</td>
+<td>chatgpt templates for photos</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>82</td>
+<td>chatgpt templates for pictures</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>83</td>
+<td>chatgpt templates free</td>
+<td>промпты</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>84</td>
+<td>chatgpt настройки</td>
+<td>настройки</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>85</td>
+<td>chatgpt настройки обновлены</td>
+<td>настройки</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>86</td>
+<td>лучшие настройки chatgpt</td>
+<td>настройки</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>87</td>
+<td>пользовательские настройки chatgpt</td>
+<td>настройки</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>88</td>
+<td>chatgpt написать</td>
+<td>написать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>89</td>
+<td>chatgpt написать в поддержку</td>
+<td>написать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>90</td>
+<td>chatgpt написать книгу</td>
+<td>написать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>91</td>
+<td>chatgpt написать песню</td>
+<td>написать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>92</td>
+<td>chatgpt написать письмо</td>
+<td>написать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>93</td>
+<td>chatgpt написать текст</td>
+<td>написать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>94</td>
+<td>chatgpt написать текст песни</td>
+<td>написать</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>95</td>
+<td>chatgpt для написания курсовой</td>
+<td>для учёбы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>средний</td>
+</tr>
+<tr class="row-gap">
+<td>96</td>
+<td>chatgpt написать реферат</td>
+<td>для учёбы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>97</td>
+<td>chatgpt написать сочинение</td>
+<td>для учёбы</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>98</td>
+<td>chatgpt для маркетолога</td>
+<td>маркетинг</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>средний</td>
+</tr>
+<tr class="row-gap">
+<td>99</td>
+<td>промты для chatgpt для маркетолога</td>
+<td>маркетинг</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>средний</td>
+</tr>
+<tr class="row-gap">
+<td>100</td>
+<td>chatgpt регистрация беларусь</td>
+<td>россия/русский</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>101</td>
+<td>chatgpt регистрация в казахстане</td>
+<td>россия/русский</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>102</td>
+<td>интеграция chatgpt на сайт</td>
+<td>онлайн</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>103</td>
+<td>нейросеть chatgpt официальный сайт</td>
+<td>онлайн</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>104</td>
+<td>chatgpt как настроить</td>
+<td>как пользоваться</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>высокий</td>
+</tr>
+<tr class="row-gap">
+<td>105</td>
+<td>как настроить chatgpt в россии</td>
+<td>как пользоваться</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>высокий</td>
+</tr>
+<tr class="row-gap">
+<td>106</td>
+<td>как настроить chatgpt для изучения английского</td>
+<td>как пользоваться</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>высокий</td>
+</tr>
+<tr class="row-gap">
+<td>107</td>
+<td>как настроить chatgpt для изучения языка</td>
+<td>как пользоваться</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>высокий</td>
+</tr>
+<tr class="row-gap">
+<td>108</td>
+<td>как настроить chatgpt на iphone</td>
+<td>как пользоваться</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>высокий</td>
+</tr>
+<tr class="row-gap">
+<td>109</td>
+<td>как настроить chatgpt под себя</td>
+<td>как пользоваться</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>высокий</td>
+</tr>
+<tr class="row-gap">
+<td>110</td>
+<td>advertisement in chatgpt</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>111</td>
+<td>chat gpt 5 возможности</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>112</td>
+<td>chat gpt ads</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>113</td>
+<td>chat gpt advertisement</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>114</td>
+<td>chat gpt advertisement music</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>115</td>
+<td>chat gpt aggregator</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>116</td>
+<td>chat gpt chat</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>117</td>
+<td>chat gpt chat bot</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>118</td>
+<td>chat gpt chat free</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>119</td>
+<td>chat gpt chat online</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>120</td>
+<td>chat gpt content</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>121</td>
+<td>chat gpt content convert to human text</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>122</td>
+<td>chat gpt content failed</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>123</td>
+<td>chat gpt content failed to load</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>124</td>
+<td>chat gpt content failed to load error</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>125</td>
+<td>chat gpt content failed to load try again</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>126</td>
+<td>chat gpt content policy</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>127</td>
+<td>chat gpt enterprise codex</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>128</td>
+<td>chat gpt enterprise sso</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>129</td>
+<td>chat gpt enterprise usage limits</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>130</td>
+<td>chat gpt enterprise version</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>131</td>
+<td>chat gpt manual</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>132</td>
+<td>chat gpt manual pdf</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>133</td>
+<td>chat gpt marketing strategy</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>134</td>
+<td>chat gpt reklame</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>135</td>
+<td>chat gpt review</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>136</td>
+<td>chat gpt review 2025</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>137</td>
+<td>chat gpt review cv</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>138</td>
+<td>chat gpt review document</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>139</td>
+<td>chat gpt review jurnal</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>140</td>
+<td>chat gpt review response</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>141</td>
+<td>chat gpt team 1 dollar</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>142</td>
+<td>chat gpt team account</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>143</td>
+<td>chat gpt test free</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>144</td>
+<td>chat gpt test turing</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>145</td>
+<td>chat gpt обучение</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>146</td>
+<td>chat gpt тест тьюринга</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>средний</td>
+</tr>
+<tr class="row-gap">
+<td>147</td>
+<td>chatgpt</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>148</td>
+<td>chatgpt 4</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>149</td>
+<td>chatgpt 4.0</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>150</td>
+<td>chatgpt 4.5</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>151</td>
+<td>chatgpt 5</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>152</td>
+<td>chatgpt 5 обновление</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>153</td>
+<td>chatgpt 5.2</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>154</td>
+<td>chatgpt 5.5</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>155</td>
+<td>chatgpt 5.6</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>156</td>
+<td>chatgpt 5.6 luna</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>157</td>
+<td>chatgpt 5.6 release date</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>158</td>
+<td>chatgpt 5.6 sol</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>159</td>
+<td>chatgpt 5.7</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>160</td>
+<td>chatgpt advertisement cast</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>161</td>
+<td>chatgpt advertisement girl</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>162</td>
+<td>chatgpt advertisement girl name</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>163</td>
+<td>chatgpt advertisement india</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>164</td>
+<td>chatgpt advertisement song</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>165</td>
+<td>chatgpt advertisement video</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>166</td>
+<td>chatgpt advertising</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>167</td>
+<td>chatgpt aggregator</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>168</td>
+<td>chatgpt analysis</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>169</td>
+<td>chatgpt analysis paused</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>170</td>
+<td>chatgpt analyze image</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>171</td>
+<td>chatgpt analyze video</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>172</td>
+<td>chatgpt analyzer</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>173</td>
+<td>chatgpt biznes</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>174</td>
+<td>chatgpt biznes cena</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>175</td>
+<td>chatgpt bot ai</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>176</td>
+<td>chatgpt bot discord</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>177</td>
+<td>chatgpt bot whatsapp</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>178</td>
+<td>chatgpt business</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>179</td>
+<td>chatgpt business gpt 6</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>180</td>
+<td>chatgpt business plan</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>181</td>
+<td>chatgpt business pricing</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>182</td>
+<td>chatgpt business возможности</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>183</td>
+<td>chatgpt chat</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>184</td>
+<td>chatgpt chatgpt</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>185</td>
+<td>chatgpt code</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>186</td>
+<td>chatgpt code free</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>187</td>
+<td>chatgpt code generator</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>188</td>
+<td>chatgpt code interpreter</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>189</td>
+<td>chatgpt code interpreter session expired</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>190</td>
+<td>chatgpt code red</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>191</td>
+<td>chatgpt code to image</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>192</td>
+<td>chatgpt content</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>193</td>
+<td>chatgpt content creator</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>194</td>
+<td>chatgpt content failed to load</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>195</td>
+<td>chatgpt content failed to load error</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>196</td>
+<td>chatgpt content failed to load try again</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>197</td>
+<td>chatgpt content policy</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>198</td>
+<td>chatgpt content policy restrictions</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>199</td>
+<td>chatgpt content removed</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+<tr class="row-gap">
+<td>200</td>
+<td>chatgpt content restrictions</td>
+<td>прочие</td>
+<td><span class="sg-badge gap">НЕ закрыт</span></td>
+<td>низкий</td>
+</tr>
+</tbody>
+</table>
+
+<div class="sg-info" style="margin-top:24px">
+<p><strong>Как использовать.</strong> Разрывы с приоритетом «высокий» - интенты с наибольшим потенциалом трафика. Закройте их, создав релевантные страницы или улучшив существующие. Каждый закрытый разрыв = дополнительный поисковый трафик.</p>
+<p><strong>Следующие шаги:</strong> Создать страницы под категории «регистрация/вход», «скачать/приложение», «шаблоны/prompts», «для учёбы», «для маркетолога». Каждая страница закрывает 3-20 интентов.</p>
+<p><strong>STIVA.ai</strong> - <a href="https://stiva.ai">80+ нейросетей в одной подписке</a>. Оплата картой МИР и СБП, без VPN.</p>
+</div>
+
+</div>
+
+<script>
+function filterTable(mode) {
+  const rows = document.querySelectorAll('#gapTable tbody tr');
+  rows.forEach(row => {
+    if (mode === 'all') row.style.display = '';
+    else if (mode === 'gap') row.style.display = row.classList.contains('row-gap') ? '' : 'none';
+    else if (mode === 'covered') row.style.display = row.classList.contains('row-cover') ? '' : 'none';
+  });
+  document.querySelectorAll('.sg-filter button').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+
+<footer class="footer"></footer>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/components.js"></script>
+</body>
+</html>
